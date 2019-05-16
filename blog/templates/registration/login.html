@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<div class="container">
+<hr>
+
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+
+<form method="post" >{% csrf_token %}
+    {{ form.as_p }}
+
+    <input type="submit" value="Sign Up" class="btn btn-sm btn-outline-secondary" >
+</form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
